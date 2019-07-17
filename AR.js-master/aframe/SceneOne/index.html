@@ -55,7 +55,14 @@ fullbutton.addEventListener("click", function (evt) {
 <!-- END: Add Image Target (marker) -->
 
 <!-- BEGIN: Unity Compiled Objects -->
-<a-box src="" id="Cube_0" class="intersectable" width="0.1" height="0.1" depth="0.1" position="-0.01059288 0.1105485 0.134553" rotation="0 0 0" color="#FFFFFF" transparent=False
+<a-box src="" id="Cube_0" class="intersectable" width="0.1" height="0.1" depth="0.1" position="0 0.05 0" rotation="0 0 0" color="#FF0000" transparent=False
+animation__cube_0_f0="property: position;  to: 0.35 0.1 0.15; dur: 0; easing: linear; startEvents: mousedown;"
+animation__cube_0_f0="property: rotation;  to: 0 0 0; dur: 0; easing: linear; startEvents: mousedown;"
+animation__cube_0_f0="property: width;  to: 0.1; dur: 0; easing: linear; startEvents: mousedown;"
+animation__cube_0_f0="property: height;  to: 0.1; dur: 0; easing: linear; startEvents: mousedown;"
+animation__cube_0_f0="property: depth;  to: 0.1; dur: 0; easing: linear; startEvents: mousedown;"
+animation__cube_0_f1="property: position; from: 0.35 0.1 0.15; to: -0.35 0.1 0.15; dur: 0; easing: linear; startEvents: animationcomplete__cube_0_f0, animationcomplete__cube_0_f2;"
+animation__cube_0_f2="property: position; from: -0.35 0.1 0.15; to: 0 0.05 0; dur: 0; easing: linear; startEvents: animationcomplete__cube_0_f1;"
 ></a-box>
 <!-- END: Unity Compiled Objects -->
 
