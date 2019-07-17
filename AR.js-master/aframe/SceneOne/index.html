@@ -16,6 +16,10 @@ init: function () {
 var elem = document.documentElement;
 var marker = document.querySelector("#marker");
 var fullbutton = document.querySelector("#fullscreen");
+var Plane_1 = document.querySelector("#Plane_1");
+Plane_1.addEventListener("mousedown", function(evt){
+open("https://www.fosterandpartners.com/");
+});
 fullbutton.addEventListener("click", function (evt) {
                 if (elem.requestFullscreen) {
                     elem.requestFullscreen();
@@ -56,14 +60,19 @@ fullbutton.addEventListener("click", function (evt) {
 
 <!-- BEGIN: Unity Compiled Objects -->
 <a-box src="" id="Cube_0" class="intersectable" width="0.1" height="0.1" depth="0.1" position="0 0.05 0" rotation="0 0 0" color="#FF0000" transparent=False
-animation__cube_0_f0="property: position;  to: 0.35 0.1 0.15; dur: 0; easing: linear; startEvents: mousedown;"
-animation__cube_0_f0="property: rotation;  to: 0 0 0; dur: 0; easing: linear; startEvents: mousedown;"
-animation__cube_0_f0="property: width;  to: 0.1; dur: 0; easing: linear; startEvents: mousedown;"
-animation__cube_0_f0="property: height;  to: 0.1; dur: 0; easing: linear; startEvents: mousedown;"
-animation__cube_0_f0="property: depth;  to: 0.1; dur: 0; easing: linear; startEvents: mousedown;"
-animation__cube_0_f1="property: position; from: 0.35 0.1 0.15; to: -0.35 0.1 0.15; dur: 0; easing: linear; startEvents: animationcomplete__cube_0_f0, animationcomplete__cube_0_f2;"
-animation__cube_0_f2="property: position; from: -0.35 0.1 0.15; to: 0 0.05 0; dur: 0; easing: linear; startEvents: animationcomplete__cube_0_f1;"
+animation__cube_0_f0="property: position;  to: 0 0.05 0; dur: 0; easing: linear; "
+animation__cube_0_f0="property: rotation;  to: 0 0 0; dur: 0; easing: linear; "
+animation__cube_0_f0="property: width;  to: 0.1; dur: 0; easing: linear; "
+animation__cube_0_f0="property: height;  to: 0.1; dur: 0; easing: linear; "
+animation__cube_0_f0="property: depth;  to: 0.1; dur: 0; easing: linear; "
+animation__cube_0_f1="property: position; from: 0 0.05 0; to: -0.381 0.05 0; dur: 1000; easing: linear; startEvents: animationcomplete__cube_0_f0, animationcomplete__cube_0_f5;"
+animation__cube_0_f2="property: position; from: -0.381 0.05 0; to: 0.349 0.05 -0.286; dur: 1000; easing: linear; startEvents: animationcomplete__cube_0_f1;"
+animation__cube_0_f3="property: position; from: 0.349 0.05 -0.286; to: -0.316 0.05 0.302; dur: 1000; easing: linear; startEvents: animationcomplete__cube_0_f2;"
+animation__cube_0_f4="property: position; from: -0.316 0.05 0.302; to: 0.259 0.05 0.346; dur: 1000; easing: linear; startEvents: animationcomplete__cube_0_f3;"
+animation__cube_0_f5="property: position; from: 0.259 0.05 0.346; to: 0 0.05 0; dur: 1000; easing: linear; startEvents: animationcomplete__cube_0_f4;"
 ></a-box>
+<a-plane src="textures/FP.png" id="Plane_1" class="intersectable" width="1" height="0.16867" position="0.014 0.055 -0.563" rotation="320.8342 0 0" color="#FFFFFF" transparent=True
+></a-plane>
 <!-- END: Unity Compiled Objects -->
 
 <!-- BEGIN: Bottom HTML -->
